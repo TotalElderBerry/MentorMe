@@ -1,0 +1,62 @@
+POST http://localhost:8000/intern HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test",
+    "age": 12,
+    "level": "Noob",
+    "username": "test",
+    "password": "test"
+}
+
+###
+POST http://localhost:8000/mentor HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Brian Lisondra",
+    "age": 22,
+    "experties": "Tiktok, NBA",
+    "username": "test",
+    "password": "test"
+}
+
+###
+GET http://localhost:8000/mentors HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:8000/intern/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "te12st",
+    "password": "test"
+}
+
+###
+POST http://localhost:8000/mentor/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}
+
+###
+POST http://localhost:8000/internproblem HTTP/1.1
+content-type: application/json
+
+{
+    "problem_id": 1,
+    "problem_description": "test",
+    "solution": "test",
+    "language": "test",
+    "title": "test",
+    "intern_id": 5,
+    "date_complete": "test"
+}
+
+###
+GET http://localhost:8000/internproblems HTTP/1.1
+content-type: application/json
